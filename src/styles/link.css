@@ -1,0 +1,9 @@
+/* === Links === */
+a {
+  color: #ef476f;
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color: #ffd166;
+}

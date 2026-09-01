@@ -1,0 +1,55 @@
+/* === Headers === */
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3 {
+  display: block;
+  color: #ff6f61;
+  
+  box-shadow: 0.2em 0.2em #ffc457;
+  margin-bottom: 0.2em;
+
+  background: #ffd166;
+  padding: 0.3em 0.6em;
+  align-self: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 2rem;
+  font-weight: 800;
+}
+
+h2 {
+  width: 90%;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+h3 {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h1.secondary-title,
+h2.secondary-title,
+h3.secondary-title,
+.h1-secondary,
+.h2-secondary,
+.h3-secondary {
+  color: var(--yellow);
+  border-top: 0.3rem solid var(--cyan-darker-darker);
+  border-left: 0.3rem solid var(--cyan-darker-darker);
+  border-bottom: 0.2rem solid var(--cyan-lighter);
+  border-right: 0.2rem solid var(--cyan-lighter);
+
+  box-shadow: -0.5em -0.5em black;
+
+  background: var(--cyan-darker);
+  padding: 0.3em 0.6em;
+  max-width: 25%;
+  width: 25%;
+}

@@ -1,0 +1,23 @@
+    .glowing-border {
+    box-shadow:
+        0 0 5em rgb(var(--black) / 0.5)
+    }
+    .glowing-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    background: linear-gradient(
+        90deg,
+        rgb(var(--black) / 0.25),
+        transparent 50%,
+        rgb(var(--black) / 0.25)
+    );
+    }
+
+    .border {
+        outline: none;
+        border-radius: 0.5rem;
+        border: 0.2rem solid rgb(var(--black));
+    }

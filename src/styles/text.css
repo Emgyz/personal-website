@@ -1,0 +1,33 @@
+.content .bold {
+    font-weight: 700;
+}
+
+.content .cursive,
+.content .italic {
+    font-style: italic;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul:not(ul ul),
+ol:not(ul ul),
+.content p {
+    max-width: 80%;
+    width: 80%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+li {
+    list-style-position: inside;
+}
+
+li:not(li li) {
+    padding-left: 1rem;
+}

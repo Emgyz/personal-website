@@ -1,0 +1,81 @@
+/*
+@import './styles/button.css';
+@import './styles/header.css';
+@import './styles/link.css';
+@import './styles/code.css';
+@import './styles/source.css';
+@import './styles/figure.css';
+@import './styles/shadow.css';
+*/
+
+
+@import './styles/wrapper.css';
+
+@import './styles/border.css';
+
+@import './styles/body.css';
+@import './styles/text.css';
+
+/* raw variables (used as global constants) */
+:root {
+  /* wrapper variables*/
+  --gutter: clamp(2rem, 3vw, 4rem);
+  --site-max: clamp(60rem, 75vw, 75rem);
+
+  /* nav bar */
+  --navbar-height: 8vh;
+}
+
+/*make the mobile gutter a bit thinner*/
+@media (max-width: 600px) {
+  :root {
+    --gutter: clamp(0.5rem, 1vw, 2rem);
+  }
+}
+
+
+/* === colors === */
+:root {
+  --orange: 255 119 0;
+  --yellow: 255 255 0;
+  --green: 0 255 0;
+  --black: 0 0 0;
+  --white: 255 255 255;
+
+  --bg: 221 221 221;
+  --bg-secondary: 210 210 210;
+  --text: 17 17 17;
+}
+
+html.dark {
+  --bg: 35 35 45;
+  --bg-secondary: 45 45 45;
+  --text: 238 238 238;
+}
+
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+}
+
+/* === PAGE CONTAINER === */
+.page-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+/* === cuz its cooool === */
+::selection {
+  background: #ff3300;
+  color: #ffeed1;
+}

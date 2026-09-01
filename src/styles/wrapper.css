@@ -1,0 +1,22 @@
+/* make a wrapper do wrapper things*/
+.wrapper-functionality {
+    max-width: var(--site-max);
+    padding-inline: var(--gutter);
+    margin-inline: auto;
+    width: 100%;
+    flex: auto;
+}
+
+/* makes a wrapper look like a wrapper (I split the looks and functionality for extra possibilities)*/
+.wrapper-looks {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background: var(--wrapper-bg);
+    border-left: solid 0.1rem black;
+    border-right: solid 0.1rem black;
+    min-width: 2vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

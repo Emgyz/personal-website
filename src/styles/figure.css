@@ -1,0 +1,19 @@
+figure {
+    isolation: isolate;
+    position: relative;
+    z-index: 0;
+}
+
+figure,
+content img:not(figure > img) {
+    max-width: 85%;
+}
+
+figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+figure figcaption {
+    text-align: end;
+}

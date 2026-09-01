@@ -1,0 +1,14 @@
+/* sources at the bottom of a page */
+p.apa-source {
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+
+  /* APA hanging indent */
+  text-indent: -0.5in;
+  margin-left: 0.5in;
+
+  /* spacing */
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+

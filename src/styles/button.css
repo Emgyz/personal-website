@@ -1,0 +1,69 @@
+button, .button {
+  background: #00000000;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 0px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-container {
+    isolation: isolate;
+}
+
+.neobrutalism-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background-color: var(--yellow);
+    border: 0.15rem solid black;
+    border-radius: 0.9em;
+    box-sizing: border-box;
+    color: black;
+
+    height: 4rem;
+    max-width: 100%;
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+
+    padding: 0.5em;
+    margin-block: 1em;
+}
+
+.neobrutalism-button:after {
+    content: "";
+    background-color: black;
+    border-radius: 0.9em;
+    display: block;
+    z-index: -1;
+
+    position: absolute;
+    left: 0;
+
+    width: 100%;
+    height: 4rem;
+
+    transform: translate(8px, 8px);
+    transition: transform 0.2s ease-out;
+}
+
+.neobrutalism-button:hover:after {
+    transform: translate(0, 0);
+}
+
+.neobrutalism-button:active {
+    background-color: #cccc00;
+}
+
+.neobrutalism-button:hover {
+    background-color: rgb(235, 235, 76);
+    color: black;
+}

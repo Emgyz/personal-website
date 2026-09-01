@@ -1,0 +1,8 @@
+/* === Body === */
+body {
+  min-height: 100vh;
+  font-family: Consolas, "Courier New", monospace;
+  background: radial-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
+  color: rgb(var(--text));
+  line-height: 1.6;
+}
