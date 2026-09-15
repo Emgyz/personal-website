@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/logo.svg';
+	import favicon from '$lib/assets/icons/logo.svg';
 	let { children } = $props();
 
 	// global styles

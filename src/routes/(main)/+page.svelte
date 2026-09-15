@@ -2,20 +2,17 @@
     import Grid from "$lib/components/grid.svelte";
     import GridCard from "$lib/components/gridCard.svelte";
     
-    import logo from "$lib/assets/logo.svg"
-    import pfp from "$lib/assets/me-2.jpg";
+    import pfp from "$lib/assets/me/me_1.jpg";
 
     import svelteLogo from "$lib/assets/logos/svelte.png"
     import cssLogo from "$lib/assets/logos/css.png"
     import htmlLogo from "$lib/assets/logos/html.png"
     import jsLogo from "$lib/assets/logos/js.png"
 
-    
     import luaLogo from "$lib/assets/logos/lua.png"
     import mysqlLogo from "$lib/assets/logos/mysql.png"
     import pythonLogo from "$lib/assets/logos/python.png"
     import pandasLogo from "$lib/assets/logos/pandas.png"
-
 
     import rustLogo from "$lib/assets/logos/rust.png"
     import kubernetesLogo from "$lib/assets/logos/kubernetes.png"
@@ -128,13 +125,6 @@
     typewrite();
 </script>
 
-<div class="nav">
-    <img alt="logo" src={logo}>
-    <a href="/cv">CV</a>
-    <a href="/over-mij">Over mij</a> <!-- + ambitites-->
-    <a href="/skills">Skills</a>
-    <a href="/contact">Contact</a>
-</div>
 
 <img id="my-head" class="glowing-border border" alt="profielfoto" src={pfp} />
 
@@ -313,6 +303,7 @@
     }
 
     #my-head {
+        margin-top: 5vh;
         max-height: 35vh;
         border-radius: 50%;
         align-self: center;

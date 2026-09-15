@@ -1,7 +1,6 @@
 /*
 @import './styles/button.css';
 @import './styles/header.css';
-@import './styles/link.css';
 @import './styles/code.css';
 @import './styles/source.css';
 @import './styles/figure.css';
@@ -15,6 +14,8 @@
 
 @import './styles/body.css';
 @import './styles/text.css';
+
+@import './styles/link.css';
 
 /* raw variables (used as global constants) */
 :root {
