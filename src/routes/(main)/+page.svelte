@@ -24,6 +24,8 @@
 
     import { sleep } from "../../utils/sleep";
 
+    import RoleReader from "$lib/components/roleReader.svelte";
+
     let role = $state("");
 
     const roles = ["een ICT student", "een game designer", "bugs aan het oplossen", "een aankomend software ontwikkelaar", "altijd aan het bouwen", "een techniek liefhebber"];
@@ -129,7 +131,7 @@
 <img id="my-head" class="glowing-border border" alt="profielfoto" src={pfp} />
 
 <div id="home-page-hero-text">
-    <h1 id="role">Hoi, ik ben Maurits.<br>Ik ben <span>{role}</span>!</h1>
+    <h1 id="role">Hoi, ik ben Maurits.<br>Ik ben <RoleReader></RoleReader>!</h1>
 </div>
 
 <Grid>
@@ -323,18 +325,22 @@
         text-align: start;
     }
 
+    .card-image {
+        overflow: hidden;
+    }
+
+    #home-page-hero-text {
+        width: 80%;
+        align-self: center;
+    }
+    #role {
+        line-height: 1.6;
+        min-height: calc(3 * 1.6em);
+    }
+
     @media (max-width: 479px) {
         #my-head {
             margin-top: 20vh;
         }
     }
-
-    .card-image {
-        overflow: hidden;
-    }
-
-    #role {
-    line-height: 1.6;
-    min-height: calc(3 * 1.6em);
-}
 </style>

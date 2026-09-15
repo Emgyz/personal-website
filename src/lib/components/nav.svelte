@@ -22,10 +22,19 @@
         width: 82%;
     }
 
-    #nav #nav-logo {
+    #nav-links {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    #nav-logo {
         fill: rgb(var(--orange));
     }
 
-
-
+    @media (max-width: 479px) {
+        #nav {
+            padding-top: 0rem;
+        }
+    }
 </style>
