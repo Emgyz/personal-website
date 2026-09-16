@@ -35,7 +35,7 @@
     text-align: center;
     align-self: center;
 
-    width: 70vw;
+    width: 70%;
     margin-top: auto; /* make footer stick to bottom when there is a lack of content*/
   }
 

@@ -40,7 +40,7 @@
 
     @media (max-width: 479px)  {
         .wrapper-looks {
-            width: 100vw;
+            width: 95vw;
             margin: 0;
             border-radius: 0;
             border: transparent;

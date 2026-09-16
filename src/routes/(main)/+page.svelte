@@ -95,7 +95,7 @@
 </Grid>
 
 <h2>Voor de toekomst:</h2>
-<Grid>
+<Grid maxColumns={3}>
     <GridCard>
         <div class="card-image-wrapper"><img alt="Redis logo" src={redisLogo} class="card-image" /></div>
         <div class="card-text">Redis</div>
@@ -202,6 +202,10 @@
         object-fit: contain;
         display: block;
         border-radius: rem;
+        overflow: hidden;
+    }
+    .card-text {
+        text-align: center;
     }
 
     #my-head {
@@ -223,10 +227,6 @@
     
     ul {
         text-align: start;
-    }
-
-    .card-image {
-        overflow: hidden;
     }
 
     #home-page-hero-text {

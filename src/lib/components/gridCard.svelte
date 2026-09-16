@@ -8,6 +8,7 @@
 
 <style>
     .card {
+        text-align: center;
         aspect-ratio: 1;
         width: 100%;
         min-height: 0;
@@ -17,7 +18,7 @@
         flex-direction: column;
         gap: 1rem;
 
-        padding: 1.5rem;
+        padding: 1rem;
 
         background-color: rgb(var(--bg));
         border-radius: 0.5rem;
