@@ -31,7 +31,7 @@
 <img id="my-head" class="glowing-border border" alt="profielfoto" src={pfp} />
 
 <div id="home-page-hero-text">
-    <h1 id="role">Hoi, ik ben Maurits.<br>Ik ben <RoleReader></RoleReader>!</h1>
+    <h2 id="role">Hoi, ik ben Maurits.<br>Ik ben <RoleReader></RoleReader>!</h2>
 </div>
 
 <Grid>
@@ -86,7 +86,7 @@
     dat overal uitgevoerd kan worden, waardoor ik mijn creaties met iedereen kan delen!
 </p>
 
-<h2>Nog niet onder de knie, maar wel in geïnteresseerd en/of mee bezig:</h2>
+<h2>In geïntereseerd, nog niet onder de knie:</h2>
 <Grid>
     <GridCard>
         <div class="card-image-wrapper"><img alt="Rust logo" src={rustLogo} class="card-image" /></div>

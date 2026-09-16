@@ -1,29 +1,30 @@
-<script>
-
-</script>
-
-
 <footer>
+  <div id="footer-content-container">
     <section class="footer-section">
         <b>Contact</b><br />
         Een <a href="/contact">vraag</a> stellen en/of contact opnemen kan <a href="/contact">hier</a>!
     </section>
+
     <span class="vertical-divider"></span>
     <div style="background-color:red;"></div>
     <hr>
+
     <section class="footer-section">
         <b>Auteursrecht</b><br />
         Copyright 2026<br />
         Door Maurits van Zoelen<br />
         Alle rechten voorbehouden
     </section>
+
     <span class="vertical-divider"></span>
     <div style="background-color:red;"></div>
     <hr>
-    <section>
+
+    <section class="footer-section">
       <b>Realisatie</b>
       <p>Realisatie met behulp van <a href="https://svelte.dev">Sveltekit</a></p>
     </section>
+  </div>
 </footer>
 
 <style>
@@ -32,14 +33,32 @@
     justify-content: center; /* aligns text at bottom */
     align-items: center;
     text-align: center;
-    background-image: linear-gradient(
-      90deg,
-      var(--cyan-darker),
-      var(--cyan-lighter),
-      var(--cyan-darker)
-    );
-    border-top: 0.2rem solid var(--cyan-darker);
+    align-self: center;
+
+    width: 70vw;
+    margin-top: auto; /* make footer stick to bottom when there is a lack of content*/
+  }
+
+  #footer-content-container {
+    display: flex;
+    justify-content: center; /* aligns text at bottom */
+    align-items: center;
+    text-align: center;
+    align-self: center;
+
     width: 100%;
+    margin-bottom: 2rem;
+    background: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--bg) / 0.8) 20%,
+      rgb(var(--bg) / 0.8) 80%,
+      transparent
+    );
+
+    border-radius: 20% / 8%;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
   }
 
   .footer-section {
@@ -66,8 +85,9 @@
 
     /* mobile */
     @media only screen and (max-width: 600px) {
-      footer {
+      #footer-content-container {
         flex-direction: column;
+        border-radius: 20% / 5%;
       }
       hr {
         display: block;
@@ -79,7 +99,7 @@
 
     /* desktop */
     @media only screen and (min-width: 601px) {
-      footer {
+      #footer-content-container {
         flex-direction: row;
       }
       hr {
