@@ -67,6 +67,10 @@
         <div class="card-image-wrapper"><img alt="MySQL logo" src={mysqlLogo} class="card-image" /></div>
         <div class="card-text">MySQL</div>
     </GridCard>
+        <GridCard>
+        <div class="card-image-wrapper"><img alt="Git logo" src={gitLogo} class="card-image" /></div>
+        <div class="card-text">Git</div>
+    </GridCard>
 </Grid>
 
 <p>
@@ -87,10 +91,6 @@
     <GridCard>
         <div class="card-image-wrapper"><img alt="Rust logo" src={rustLogo} class="card-image" /></div>
         <div class="card-text">Rust</div>
-    </GridCard>
-    <GridCard>
-        <div class="card-image-wrapper"><img alt="Git logo" src={gitLogo} class="card-image" /></div>
-        <div class="card-text">Git</div>
     </GridCard>
 </Grid>
 
