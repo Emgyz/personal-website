@@ -9,7 +9,7 @@
 <style>
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(var(--min-width), 1fr));
+        grid-template-columns: repeat(3, minmax(var(--min-width), 1fr));
         justify-content: center;
         
         border: 5px red;
